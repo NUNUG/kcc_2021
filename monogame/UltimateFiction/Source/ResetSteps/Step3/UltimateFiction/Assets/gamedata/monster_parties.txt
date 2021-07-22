@@ -1,0 +1,6 @@
+1, Imp
+1, Imp, Imp, Imp
+1, Imp, Imp, Imp, Wolf, Wolf
+1, Imp, Imp, Imp, Imp, Imp, Imp, Imp, Imp
+1, Wolf, Wolf, Wolf, Wolf
+

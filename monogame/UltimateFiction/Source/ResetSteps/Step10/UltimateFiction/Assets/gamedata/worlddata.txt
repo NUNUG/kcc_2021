@@ -1,0 +1,550 @@
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[Teleports]
+# Coneria town IN
+OW(37,55):CT(58,20)
+OW(37,56):CT(58,20)
+OW(37,57):CT(58,20)
+
+OW(40,55):CT(9, 20)
+OW(40,56):CT(9, 20)
+OW(40,57):CT(9, 20)
+
+# Coneria town OUT
+CT(8, 20):OW(39, 57)
+CT(59, 20):OW(38, 57)
+
+# Coneria castle IN
+OW(38,53):CC(39,41)
+OW(38,54):CC(39,41)
+OW(39,53):CC(39,41)
+OW(39,54):CC(39,41)
+
+# Coneria castle OUT
+CC(38,42):OW(38,55)
+CC(39,42):OW(38,55)
+CC(40,42):OW(38,55)
+
+# Melmond Town IN
+OW(54, 52):MT(40, 38)
+OW(55, 52):MT(40, 38)
+OW(54, 53):MT(40, 38)
+OW(55, 53):MT(40, 38)
+
+# Melmond Town OUT
+MT(39, 39):OW(54, 54)
+MT(40, 39):OW(54, 54)
+MT(41, 39):OW(54, 54)
+
+# Earth Cave IN
+OW(54, 45):EC(11, 10)
+
+# Earth Cave OUT
+EC(10, 10):OW(54, 46)
+
+# Gurgu Path
+OW(39, 26): OW(42, 30)
+OW(42, 29): OW(39, 27)
+OW(51, 33): OW(61, 32)
+OW(60, 32): OW(50, 33)
+
+# Gurgu IN
+OW(60, 30):GV(55, 47)
+OW(61, 30):GV(55, 47)
+
+# Gurgu OUT
+GV(55, 46):OW(60, 31)
+
+# Crescent Town IN
+OW(71, 58):CR(77, 65)
+OW(71, 59):CR(77, 65)
+OW(72, 58):CR(77, 65)
+OW(72, 59):CR(77, 65)
+
+# Crescent Town OUT
+CR(78, 65): OW(73, 59)
+
+# SouthPort Town IN
+OW(96, 69): SP(44, 51)
+OW(97, 69): SP(44, 51)
+OW(98, 69): SP(44, 51)
+OW(96, 70): SP(44, 51)
+OW(96, 70): SP(44, 51)
+OW(96, 70): SP(44, 51)
+
+# SouthPort Town OUT
+SP(43, 52): OW(96, 71)
+SP(44, 52): OW(96, 71)
+SP(45, 52): OW(96, 71)
+
+# Atlantis IN
+OW(15, 75):AT(76, 72)
+
+# Atlantis OUT
+AT(76, 73):OW(15, 76)
+
+# Airship Clearing
+OW(84, 46):AC(35, 31)
+AC(35, 32):OW(84,47)
+
+# Gaia Town IN
+OW(17, 20): GT(30, 80)
+OW(18, 20): GT(30, 80)
+OW(17, 21): GT(30, 80)
+OW(18, 21): GT(30, 80)
+
+# Gaia Town OUT
+GT(29, 81):OW(17, 22)
+GT(30, 81):OW(17, 22)
+GT(31, 81):OW(17, 22)
+
+# SkyCastle IN
+OW(14, 21):SC(27, 122)
+OW(14, 21):SC(27, 122)
+OW(15, 22):SC(27, 122)
+OW(15, 22):SC(27, 122)
+
+# SkyCastle OUT
+SC(27, 123): OW(15, 23)
+
+# Waterfall IN
+OW(72, 51): WF(43, 46)
+
+# Waterfall OUT
+WF(43, 47):OW(72, 52)
+
+# Terminus Castle IN
+OW(83, 24):TC(59, 84)
+OW(84, 24):TC(59, 84)
+
+# Terminus Castle OUT
+TC(58, 85): OW(82, 25)
+TC(59, 85): OW(82, 25)
+TC(60, 85): OW(82, 25)
+
+# Earth Cave
+EC(34, 10):EC(48, 11)
+EC(48, 10):EC(33, 10)
+EC(10, 15):EC(9, 38)
+EC(9, 37):EC(10, 16)
+EC(34, 20):EC(61, 37)
+EC(60, 37):EC(34, 21)
+EC(10, 25):EC(32, 44)
+EC(33, 44):EC(11, 25)
+EC(19, 46):EC(10, 58)
+EC(10, 57):EC(18, 46)
+EC(10, 66):EC(10, 85)
+EC(10, 86):EC(10, 65)
+EC(72, 23):EC(86, 17)
+EC(86, 16):EC(71, 23)
+EC(86, 20):EC(78, 38)
+EC(78, 37):EC(86, 19)
+EC(33, 37):OW(54, 46)
+
+# Gurgu 
+GV(63, 38):GV(80, 11)
+GV(80, 12):GV(62, 38)
+GV(63, 54):GV(81, 39)
+GV(81, 38):GV(63, 52)
+GV(47, 54):GV(13, 53)
+GV(13, 54):GV(48, 54)
+GV(47, 38):GV(11, 17)
+GV(10, 17):GV(47, 39)
+GV(13, 42):OW(60, 31)
+
+# Atlantis
+AT(103, 66):AT(119, 53)
+AT(120, 53):AT(102, 66)
+AT(90, 62):AT(112, 49)
+AT(112, 48):AT(89, 62)
+AT(60, 62):AT(35, 55)
+AT(35, 56):AT(61, 62)
+AT(43, 50):AT(74, 22)
+AT(73, 22):AT(43, 51)
+AT(77, 22):AT(101, 18)
+AT(101, 17):AT(76, 22)
+AT(103, 19):AT(88, 54)
+AT(88, 53):AT(102, 19)
+AT(62, 53):AT(31, 17)
+AT(30, 17):AT(62, 54)
+AT(46, 18):AT(75, 56)
+AT(75, 57):AT(45, 18)
+AT(75, 49):OW(15, 23)
+
+# Sky Castle
+SC(12, 100):SC(12, 79)
+SC(12, 80):SC(13, 100)
+SC(27, 97):SC(27, 79)
+SC(27, 80):SC(27, 98)
+SC(42, 100):SC(42, 79)
+SC(42, 80):SC(41, 100)
+SC(12, 70):SC(13, 49)
+SC(12, 49):SC(12, 71)
+SC(27, 69):SC(27, 52)
+SC(27, 51):SC(27, 70)
+SC(42, 70):SC(41, 49)
+SC(42, 49):SC(42, 71)
+SC(27, 41):SC(27, 26)
+SC(27, 27):SC(27, 42)
+SC(27, 11):OW(15, 23)
+
+# Terminus Castle
+TC(59, 83):TC(59, 81)
+TC(24, 75):TC(24, 73)
+TC(27, 32):TC(27, 30)
+TC(95, 28):TC(95, 39)
+TC(66, 75):TC(62, 71)
+TC(62, 44):OW(82, 25)
+
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[NPC Interactions]
+# Format is:  
+# NPC-MapCoord: SpriteRow, SpriteCol, SpriteFrameCount; "Quoted dialog text."
+# Sprite values of -1, -1, -1 will not use a sprite.  Use this to interact with the image on the tilemap instead.
+
+CT(10, 18): -1, -1, -1; "Welcome to Coneria Town"
+CT(57, 18): -1, -1, -1; "Welcome to Coneria Town"
+CT(50, 24): -1, -1, -1; "The running water is very soothing."
+CT(51, 24): -1, -1, -1; "The running water is very soothing."
+CT(52, 24): -1, -1, -1; "The running water is very soothing."
+CT(50, 25): -1, -1, -1; "The running water is very soothing."
+CT(52, 25): -1, -1, -1; "The running water is very soothing."
+CT(50, 26): -1, -1, -1; "The running water is very soothing."
+CT(51, 26): -1, -1, -1; "The running water is very soothing." 
+CT(52, 26): -1, -1, -1; "The running water is very soothing."
+CT(18, 17): -1, -1, -1; "There is nobody in there.  Oh, Well."
+CT(50, 13): -1, -1, -1; "King Arthur's Ashes."
+CT(51, 13): -1, -1, -1; "Conan's Crypt."
+CT(52, 13): -1, -1, -1; "Potter's Plot."
+CT(50, 15): -1, -1, -1; "Belmont's Barrow."
+CT(51, 15): -1, -1, -1; "Gandalf the Grave."
+CT(52, 15): -1, -1, -1; "Merlin's Memorial."
+
+MT(42, 36): -1, -1, -1; "Welcome to Melmond Town"
+MT(39, 31): -1, -1, -1; "The fountain has run dry."
+MT(40, 31): -1, -1, -1; "The fountain has run dry."
+MT(41, 31): -1, -1, -1; "The fountain has run dry."
+MT(39, 32): -1, -1, -1; "The fountain has run dry."
+MT(41, 32): -1, -1, -1; "The fountain has run dry."
+MT(39, 33): -1, -1, -1; "The fountain has run dry."
+MT(40, 33): -1, -1, -1; "The fountain has run dry."
+MT(41, 33): -1, -1, -1; "The fountain has run dry."
+
+GT(33, 77): -1, -1, -1; "Welcome to Gaia Town"
+
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[Ports]
+OW(38, 63)
+OW(38, 62)
+OW(39, 62)
+OW(40, 62)
+OW(40, 63)
+
+OW(96, 73)
+OW(96, 72)
+OW(97, 72)
+OW(98, 72)
+OW(98, 73)
+
+OW(16, 80)
+OW(16, 79)
+OW(16, 78)
+OW(17, 78)
+OW(18, 78)
+
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[Shops]
+CT(25, 18): shop_coneria_whitemagic
+CT(34, 18): shop_coneria_blackmagic
+CT(43, 18): shop_coneria_clinic
+CT(25, 29): shop_coneria_item
+CT(34, 29): shop_coneria_weapon
+CT(36, 29): shop_coneria_armor
+CT(43, 29): shop_coneria_inn
+
+MT(17, 20): shop_melmond_armor
+MT(29, 20): shop_melmond_weapon
+MT(52, 20): shop_melmond_item
+MT(17, 30): shop_melmond_clinic
+MT(28, 30): shop_melmond_whitemagic
+MT(30, 30): shop_melmond_blackmagic
+MT(52, 30): shop_melmond_inn
+
+CR(67, 63): shop_crescent_inn
+CR(59, 63): shop_crescent_clinic
+CR(51, 63): shop_crescent_armor
+CR(43, 63): shop_crescent_weapon
+CR(35, 63): shop_crescent_item
+CR(27, 63): shop_crescent_blackmagic
+CR(19, 63): shop_crescent_whitemagic
+
+SP(44, 29): shop_southport_inn
+SP(21, 41): shop_southport_weapon
+SP(25, 41): shop_southport_armor
+SP(24, 29): shop_southport_clinic
+SP(63, 29): shop_southport_item
+SP(62, 41): shop_southport_whitemagic
+SP(66, 41): shop_southport_blackmagic
+
+GT(29, 67): shop_gaia_armor
+GT(36, 60): shop_gaia_weapon
+GT(60, 67): shop_gaia_item
+GT(63, 35): shop_gaia_whitemagic
+GT(76, 35): shop_gaia_blackmagic
+
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[Triggers]
+CC(39, 23): ceiling_off
+CC(39, 24): ceiling_on
+CC(23, 19): ceiling_off
+CC(23, 20): ceiling_on
+CC(21, 37): ceiling_off
+CC(21, 38): ceiling_on
+CC(55, 19): ceiling_off
+CC(55, 20): ceiling_on
+CC(57, 37): ceiling_off
+CC(57, 38): ceiling_on
+
+EC(72, 20): ceiling_off
+EC(72, 21): ceiling_on
+EC(33, 42): ceiling_off
+EC(33, 43): ceiling_on
+EC(14, 44): ceiling_off
+EC(14, 45): ceiling_on
+EC(33, 39): obtain_earth_orb
+GV(13, 44): obtain_fire_orb
+GV(11, 15): ceiling_off
+GV(15, 15): ceiling_off
+GV(20, 15): ceiling_off
+GV(26, 15): ceiling_off
+GV(32, 15): ceiling_off
+GV(39, 15): ceiling_off
+GV(13, 49): ceiling_off
+
+GV(11, 16): ceiling_on
+GV(15, 16): ceiling_on
+GV(20, 16): ceiling_on
+GV(26, 16): ceiling_on
+GV(32, 16): ceiling_on
+GV(39, 16): ceiling_on
+GV(13, 50): ceiling_on
+
+AC(35, 23): find_airship
+SC(27, 17): ceiling_off
+SC(27, 18): ceiling_on
+SC(27, 13): obtain_air_orb
+AT(75, 51): obtain_water_orb
+
+WF(43, 19): ceiling_off
+WF(43, 20): ceiling_on
+
+TC(54, 78): ceiling_off
+TC(42, 82): ceiling_off
+TC(32, 81): ceiling_off
+TC(24, 81): ceiling_off
+TC(22, 70): ceiling_off
+TC(32, 62): ceiling_off
+TC(22, 54): ceiling_off
+TC(32, 46): ceiling_off
+TC(27, 38): ceiling_off
+TC(39, 35): ceiling_off
+TC(95, 35): ceiling_off
+TC(87, 78): ceiling_off
+TC(74, 78): ceiling_off
+TC(66, 82): ceiling_off
+TC(62, 56): ceiling_off
+
+TC(54, 79): ceiling_on
+TC(42, 83): ceiling_on
+TC(32, 82): ceiling_on
+TC(24, 82): ceiling_on
+TC(22, 71): ceiling_on
+TC(32, 63): ceiling_on
+TC(22, 55): ceiling_on
+TC(32, 47): ceiling_on
+TC(27, 39): ceiling_on
+TC(39, 36): ceiling_on
+TC(95, 36): ceiling_on
+TC(87, 79): ceiling_on
+TC(74, 79): ceiling_on
+TC(66, 83): ceiling_on
+TC(62, 57): ceiling_on
+
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[Treasures]
+CC(39, 13): Gold, 999
+CC(28, 16): Gold, 999
+CC(28, 34): Gold, 999
+CC(50, 16): Gold, 999
+CC(50, 34): Gold, 999
+
+EC(56, 11): Gold, 75
+EC(68, 11): Gold, 100
+EC(59, 22): Gold, 1
+EC(59, 23): Gold, 2
+EC(67, 17): Gold, 3
+EC(69, 17): Gold, 4
+EC(71, 17): Gold, 5
+EC(73, 17): Gold, 6
+EC(68, 36): Gold, 7
+EC(70, 36): Gold, 8
+EC(72, 36): Gold, 9
+EC(70, 38): Gold, 10
+EC(72, 38): Gold, 11
+EC(61, 46): Gold, 12
+EC(77, 46): Gold, 13
+EC(60, 55): Gold, 14
+EC(78, 55): Gold, 15
+EC(9, 78): Gold, 16
+EC(10, 77): Gold, 17
+EC(11, 78): Gold, 18
+CR(27, 32): Canoe, 1
+
+GV(80, 9): Gold, 101
+GV(82, 38): Gold, 102
+GV(83, 38): Gold, 103
+GV(84, 38): Gold, 104
+GV(85, 38): Gold, 105
+
+GV(82, 40): Gold, 201
+GV(83, 40): Gold, 202
+GV(84, 40): Gold, 203
+GV(85, 40): Gold, 204
+
+GV(81, 42): Gold, 301
+GV(82, 42): Gold, 302
+GV(83, 42): Gold, 303
+GV(84, 42): Gold, 304
+GV(85, 42): Gold, 305
+
+GV(10, 9): Gold, 401
+GV(14, 9): Gold, 501
+GV(14, 11): Gold, 502
+GV(14, 13): Gold, 503
+GV(16, 9): Gold, 504
+GV(16, 11): Gold, 505
+GV(16, 13): Gold, 506
+
+GV(30, 9): Gold, 601
+GV(30, 10): Gold, 601
+GV(30, 11): Gold, 602
+GV(30, 12): Gold, 603
+GV(30, 13): Gold, 604
+GV(30, 14): Gold, 605
+
+GV(32, 9): Gold, 701
+GV(32, 10): Gold, 701
+GV(32, 11): Gold, 702
+GV(32, 12): Gold, 703
+GV(32, 13): Gold, 704
+GV(32, 14): Gold, 705
+
+GV(34, 9): Gold, 801
+GV(34, 10): Gold, 801
+GV(34, 11): Gold, 802
+GV(34, 12): Gold, 803
+GV(34, 13): Gold, 804
+GV(34, 14): Gold, 805
+
+GV(39, 12): Gold, 9999
+
+AT(61, 69): Gold, 1
+AT(63, 69): Gold, 2
+AT(87, 70): Gold, 3
+AT(88, 69): Gold, 4
+AT(89, 70): Gold, 5
+
+SC(13, 120): Gold, 1
+SC(13, 121): Gold, 2
+SC(13, 122): Gold, 3
+SC(13, 123): Gold, 4
+SC(13, 124): Gold, 5
+SC(13, 125): Gold, 6
+
+SC(15, 121): Gold, 11
+SC(15, 122): Gold, 12
+SC(15, 123): Gold, 13
+SC(15, 124): Gold, 14
+SC(15, 125): Gold, 15
+
+SC(16, 121): Gold, 21
+SC(16, 122): Gold, 22
+SC(16, 123): Gold, 23
+SC(16, 124): Gold, 24
+SC(16, 125): Gold, 25
+
+SC(18, 120): Gold, 31
+SC(18, 121): Gold, 32
+SC(18, 122): Gold, 33
+SC(18, 123): Gold, 34
+SC(18, 124): Gold, 35
+SC(18, 125): Gold, 36
+
+SC(20, 75): Gold, 100
+SC(34, 75): Gold, 101
+SC(19, 51): Gold, 102
+SC(35, 51): Gold, 103
+
+SC(11, 25): Gold, 200
+SC(15, 25): Gold, 201
+SC(11, 29): Gold, 202
+SC(15, 29): Gold, 203
+
+SC(39, 25): Gold, 300
+SC(43, 25): Gold, 301
+SC(39, 29): Gold, 302
+SC(43, 29): Gold, 303
+
+WF(13, 57): Gold, 9999
+WF(63, 47): Gold, 9999
+WF(43, 15): Floater, 1
+
+TC(57, 76): Gold, 101
+TC(42, 80): Gold, 102
+
+TC(30, 75): Gold, 201
+TC(30, 76): Gold, 202
+TC(30, 77): Gold, 203
+TC(30, 78): Gold, 204
+TC(30, 79): Gold, 205
+TC(30, 80): Gold, 206
+
+TC(22, 67): Gold, 301
+TC(32, 59): Gold, 302
+TC(22, 51): Gold, 303
+TC(32, 43): Gold, 304
+
+TC(36, 32): Gold, 401
+TC(37, 32): Gold, 402
+TC(38, 32): Gold, 403
+TC(39, 32): Gold, 404
+TC(40, 32): Gold, 405
+TC(41, 32): Gold, 406
+TC(42, 32): Gold, 407
+
+TC(91, 49): Gold, 501
+TC(99, 49): Gold, 502
+TC(91, 61): Gold, 503
+TC(99, 61): Gold, 504
+TC(91, 71): Gold, 505
+TC(99, 71): Gold, 506
+TC(87, 76): Gold, 507
+TC(74, 76): Gold, 508
+
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[Battles]
+EC(33, 40): Lich
+GV(13, 45): Kary
+AT(75, 72): Kraken
+SC(27, 14): Tiamat
+TC(24, 79): Lich
+TC(27, 36): Kary
+TC(95, 33): Kraken
+TC(66, 80): Tiamat
+TC(62, 47): Chaos
+
+# ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- 
+[Resume Points]
+shop_coneria_inn: OW(38, 58)
+shop_melmond_inn: OW(54, 54)
+shop_crescent_inn: OW(73, 59)
+shop_southport_inn: OW(96, 71)

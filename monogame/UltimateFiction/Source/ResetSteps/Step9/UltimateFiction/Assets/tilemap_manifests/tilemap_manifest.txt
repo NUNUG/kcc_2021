@@ -1,0 +1,25 @@
+# Format: ID,ContentName,map_filename.tmx,Human Description
+OW,Overworld,Overworld.tmx,Overworld
+AC,AirShipClearing,AirShipClearing.tmx,AirShip Clearing
+CT,ConeriaTown,ConeriaTown.tmx,Coneria Town
+CC,ConeriaCastle,ConeriaCastle.tmx,Coneria Castle
+EC,EarthCave,EarthCave.tmx,Earth Cave
+MT,MelmondTown,MelmondTown.tmx,Melmond Town
+CR,CrescentTown,CrescentTown.tmx,Crescent Town
+WF,Waterfall,Waterfall.tmx,Waterfall
+SP,SouthportTown,SouthportTown.tmx,SouthPort Town
+AT,Atlantis,Atlantis.tmx,Atlantis
+GV,Gurgu,GurguDungeon.tmx,Gurgu Volcano
+GT,GaiaTown,GaiaTown.tmx,Gaia Town
+SC,SkyCastle,SkyCastle.tmx,Sky Castle
+TC,TerminusCastle,TerminusCastle.tmx,Terminus Castle
+BATTLE,BattleScreen,BattleScreen.tmx,Battle Screen
+ARMOR,ArmorMenu,ChooseArmorMenu.tmx,Armor Menu
+HERO,HeroMenu,ChooseHeroMenu.tmx,Hero Menu
+ITEM,ItemMenu,ChooseItemMenu.tmx,Item Menu
+MAGIC,MagicMenu,ChooseMagicMenu.tmx,Magic Meu
+EQUIP,EquipMenu,EquipMenu.tmx,Equip Menu
+STATUS,StatusMenu,StatusMenu.tmx,Status Menu
+MAIN,MainMenu,MainMenu.tmx,Main Menu
+START,StartMenu,StartMenu.tmx,Start Menu
+DIALOG,Dialog,Dialog.tmx,Dialog

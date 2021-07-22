@@ -1,0 +1,8 @@
+* text=false
+*.png=false
+*.pdn=false
+*.tmx=false
+*.tsx=false
+*.jpg=false
+*.ttf=false
+*.spritefont=false

@@ -1,0 +1,21 @@
+# Format: ID,ContentName,map_filename.tmx,Human Description
+OW,Overworld,tilemap_overworld.tmx,Overworld
+CT,ConeriaTown,tilemap_coneriatown.tmx,Coneria Town
+CC,ConeriaCastle,tilemap_coneriacastle.tmx,Coneria Castle
+CR,CresentTown,tilemap_cresenttown.tmx,Crescent Town
+WF,Waterfall,tilemap_waterfall.tmx,Waterfall
+SP,SouthportTown,tilemap_southport.tmx,SouthPort Town
+AT,Atlantis,tilemap_atlantis.tmx,Atlantis
+GV,Gurgu,tilemap_gurgu.tmx,Gurgu Volcano
+GA,GaiaTown,tilemap_gaiatown.tmx,Gaia Town
+SC,SkyCastle,tilemap_skycastle.tmx,Sky Castle
+TC,TerminusCastle,tilemap_terminuscastle.tmx,Terminus Castle
+BATTLE,BattleScreen,tilemap_battlescreen.tmx,Battle Screen
+ARMOR,ArmorMenu,tilemap_armormenu.tmx,Armor Menu
+HERO,HeroMenu,tilemap_heromenu.tmx,Hero Menu
+ITEM,ItemMenu,tilemap_itemmenu.tmx,Item Menu
+MAGIC,MagicMenu,tilemap_magicmenu.tmx,Magic Meu
+EQUIP,EquipMenu,tilemap_equipmenu.tmx,Equip Menu
+STATUS,StatusMenu,tilemap_statusmenu.tm,Status Menu
+MAIN,MainMenu,tilemap_mainmenu.tmx,Main Menu
+START,StartMenu,tilemap_startmenu.tmx,Start Menu

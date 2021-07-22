@@ -1,0 +1,92 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\UltimateFiction.ContentPipelineExtensionsLib\bin\Debug\netstandard2.1\UltimateFiction.ContentPipelineExtensionsLib.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin fonts/alagard.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:fonts/alagard.spritefont
+
+#begin gamedata/worlddata.txt
+/importer:WorldDataManifestImporter
+/processor:WorldDataManifestProcessor
+/build:gamedata/worlddata.txt
+
+#begin sound/invalid.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sound/invalid.wav
+
+#begin sound/keyclick.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sound/keyclick.wav
+
+#begin sound/keynav.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sound/keynav.wav
+
+#begin spritesheets/Sprites_manifest.txt
+/importer:ImageGridManifestImporter
+/processor:ImageGridManifestProcessor
+/build:spritesheets/Sprites_manifest.txt
+
+#begin spritesheets/Sprites_texture.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:spritesheets/Sprites_texture.png
+
+#begin tilemap-manifests/tilemap_manifest.txt
+/importer:TileMapManifestImporter
+/processor:TileMapManifestProcessor
+/build:tilemap-manifests/tilemap_manifest.txt
+
+#begin tilesheets/Overworld.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:tilesheets/Overworld.png
+
+#begin tilesheets/Zones.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:tilesheets/Zones.png
+
