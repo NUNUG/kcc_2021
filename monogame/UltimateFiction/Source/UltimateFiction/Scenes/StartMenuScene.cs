@@ -1,9 +1,9 @@
 /*
 **********************************************************************************************
-* Ultimate Fiction Step 1 - Start here
+* Ultimate Fiction Step 
 **********************************************************************************************
-* This is the main program file for the title screen.  It has some functionality built into it
-* 
+* This file is complete.  The next steps (step 8 and later) will be making changes to OverworldScene.cs.
+* You can open it easily by pressing CTRL-, and then typing  "f overworldScene.cs" without quotes.
 **********************************************************************************************
 */
 using System;
@@ -30,18 +30,134 @@ namespace UltimateFiction.Scenes
 		public override void Activate(SceneController sceneController)
 		{
 			base.Activate(sceneController);
+			var tilePix = gameSettings.TileSize.Width * gameSettings.Scale;
+			int menuLeftCol = 7;
+			int continueRow = 9;
+			int newGameRow = continueRow + 1;
+			int quitGameRow = newGameRow + 1;
+			int firstSelectionRow = continueRow;
 
+			var continueGameText = new TextComponent()
+			{
+				Color = Color.White,
+				Text = "Continue",
+				Position = new Vector2(menuLeftCol * tilePix, continueRow * tilePix),
+				Scale = gameSettings.Scale / 4
+			};
+
+			var newGameText = new TextComponent()
+			{
+				Color = Color.White,
+				Text = "New Game",
+				Position = new Vector2(menuLeftCol * tilePix, newGameRow * tilePix),
+				Scale = gameSettings.Scale / 4
+			};
+
+			var QuitGameText = new TextComponent()
+			{
+				Color = Color.White,
+				Text = "Quit",
+				Position = new Vector2(menuLeftCol * tilePix, quitGameRow * tilePix),
+				Scale = gameSettings.Scale / 4
+			};
+
+			textContinueEntity = Entity.From("Continue text", continueGameText);
+			textNewEntity = Entity.From("NewGame text", newGameText);
+			textQuitEntity = Entity.From("Quit text", QuitGameText);
+
+			menuPointerCol = menuLeftCol - 2;
+			pointerSpriteComponent = new SpriteComponent(
+				"Pointer finger",
+				new Vector2(tilePix * menuPointerCol - 1, tilePix * (firstSelectionRow + SelectionIndex)),
+				(47, 8),
+				gameContent.SpriteSheet
+			);
+
+			var fingerAnimationComponent = new SpriteAnimationComponent(gameTime)
+			{
+				AnimationSpeed = 8,
+				CurrentFrameIndex = 0,
+				Frames = new FrameSet()
+				{
+					Name = "Pointer finger animation",
+					ColStart = 10,
+					Row = 47,
+					ColCount = 2,
+					SpriteId = pointerSpriteComponent.SpriteId,
+				}
+			};
+
+			fingerEntity = Entity.From("Pointer finger sprite",
+				pointerSpriteComponent,
+				fingerAnimationComponent);
+
+			entities.Clear();
+			entities.AddRange(new[] {
+				textContinueEntity,
+				textNewEntity,
+				textQuitEntity,
+				fingerEntity,
+				backgroundTilemapEntity
+			});
+			entities.ActivateAll();
 		}
 
 		public override void Deactivate()
 		{
 			base.Deactivate();
 
+			// This is where we clean up after ourselves by reversing the actions we took in the Activate() method.
+			entities.DeactivateAll();
+			entities.Clear();
 		}
 
 		public override void Update(GameTime gameTime)
 		{
+			var tilePix = 8 * gameSettings.Scale;
+			int continueRow = 9;
+			int firstSelectionRow = continueRow;
 
+			// Watch for arrow keys and Z button presses.
+			InputState inputState = ReadInput();
+			if (inputState.DownArrowPressed)
+			{
+				this.SelectionIndex = Math.Min(SelectionIndex + 1, 2);
+				gameContent.Sounds[SoundNames.KeyNav].Play();
+			}
+			else if (inputState.UpArrowPressed)
+			{
+				this.SelectionIndex = Math.Max(SelectionIndex - 1, 0);
+				gameContent.Sounds[SoundNames.KeyNav].Play();
+			}
+			else if (inputState.ZButtonPressed)
+			{
+				gameContent.Sounds[SoundNames.KeyClick].Play();
+				// A selection has been made.
+				if (SelectionIndex == SELECTION_CONTINUE)
+				{
+					// Read the game storage to see if there is an existing game.
+					if (!gameStorage.HasSaveGame())
+						// None found.  Create a new one.
+						gameStorage.EraseAndCreateNewSaveGameData();
+
+					// Load the existing game.
+					var gamePlayData = gameStorage.ReadSaveGameData();
+					(sceneController.OverworldScene as IOverworldScene).SetGameData(gamePlayData);
+					sceneController.NavigateToScene(sceneController.OverworldScene, false);
+				}
+				else if (SelectionIndex == SELECTION_NEWGAME)
+				{
+					gameStorage.EraseAndCreateNewSaveGameData();
+					var gamePlayData = gameStorage.ReadSaveGameData();
+					(sceneController.OverworldScene as IOverworldScene).SetGameData(gamePlayData);
+					sceneController.NavigateToScene(sceneController.OverworldScene, false);
+				}
+				else if (SelectionIndex == SELECTION_QUIT)
+				{
+					sceneController.EndCurrentScene();
+				}
+			}
+			pointerSpriteComponent.Position = new Vector2(tilePix * menuPointerCol - 1, tilePix * (firstSelectionRow + SelectionIndex));
 		}
 	}
 }
